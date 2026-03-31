@@ -1,0 +1,68 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.claude/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies / build caches
+node_modules/
+.parcel-cache/
+.cache/
+dist/
+build/
+coverage/
+.next/
+.nuxt/
+.svelte-kit/
+out/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+*.kdbx
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.tmp
+
+# Cloud / credentials
+credentials.json
+service-account*.json
+firebase-admin*.json
+google-credentials*.json
+aws-credentials*
+id_rsa
+id_ed25519
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Misc
+*.swp
+*.swo
