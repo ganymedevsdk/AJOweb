@@ -483,7 +483,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Swiper */
-.technology-swiper { padding-bottom: 60px; }
+.technology-swiper {
+    position: relative;
+    padding: 0 64px 60px;
+}
 
 .technology-swiper .swiper-button-prev,
 .technology-swiper .swiper-button-next {
@@ -495,7 +498,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     backdrop-filter: blur(8px);
     transition: var(--transition);
+    top: 50%;
+    margin-top: 0;
+    transform: translateY(-50%);
+    z-index: 20;
 }
+
+.technology-swiper .swiper-button-prev { left: 8px; }
+.technology-swiper .swiper-button-next { right: 8px; }
 
 .technology-swiper .swiper-button-prev::after,
 .technology-swiper .swiper-button-next::after {
@@ -767,6 +777,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+    .technology-swiper { padding: 0 0 56px; }
+
     #nosotros .grid.lg\\:grid-cols-2 {
         grid-template-columns: 1fr;
         gap: 32px;
@@ -806,6 +818,8 @@ h1, h2, h3, h4, h5, h6 {
         width: min(230px, 100%);
         height: 100px;
     }
+
+    .technology-swiper { padding-bottom: 52px; }
 
     .whatsapp-float {
         bottom: 20px;
